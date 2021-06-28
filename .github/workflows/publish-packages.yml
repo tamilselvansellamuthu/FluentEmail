@@ -20,7 +20,7 @@ jobs:
       run: dotnet build --configuration Release --no-restore
 
     - name: Publish FluentEmail.Core
-      uses: brandedoutcast/publish-nuget@v2
+      uses: brandedoutcast/publish-nuget@v2.5.2
       with:
           PROJECT_FILE_PATH: src/FluentEmail.Core/FluentEmail.Core.csproj
           NUGET_KEY: ${{secrets.NUGET_API_KEY}}
